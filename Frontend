@@ -1,0 +1,12 @@
+const MessageBubble = ({ sender, content }) => {
+  const isUser = sender === 'user';
+  return (
+    <div className={flex ${isUser ? 'justify-end' : 'justify-start'} mb-2}>
+      <div className={p-3 max-w-xs rounded-lg ${isUser ? 'bg-blue-500 text-white' : 'bg-gray-200'}}>
+        {content}
+      </div>
+    </div>
+  );
+};
+
+export default MessageBubble;
